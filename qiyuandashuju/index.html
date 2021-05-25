@@ -1,0 +1,212 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>大数据</title>
+<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+<link rel="stylesheet" type="text/css" href="index.css" />
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+</head>
+<body style="margin:0;overflow: hidden;">
+<div id="app">
+  <div class="containerBox">
+    <div class="topBox">
+      <img src="./images/topTitle.png" alt="">
+    </div>
+      <div style=' display: flex;'>
+      <div class="flexKong"></div>
+      <div class='leftBox'>
+        <div class="leftImgList left1ImgList">
+          
+          <img src="./images/leftImg1.png" alt="">
+        </div>
+        <div class="leftImgList left2ImgList">
+          <div class="paopao">
+              <div class="p1 move1">  
+                <img class="popImg" src="./images/paopao/an.png" alt="" v-show="show">
+                <img class="popImg" src="./images/paopao/liang.png" alt="" v-show="!show">
+
+                
+                <span v-show="!show"> 
+
+                  <span >4%</span>
+                  <img class="tipsImg" src="./images/paopao/1.png" alt="" >
+                </span>
+              </div>
+              <div class="p2 move1">   
+                <img  class="popImg" src="./images/paopao/an.png" alt="" v-show="!show">
+                <img class="popImg" src="./images/paopao/liang.png" alt="" v-show="show">
+
+                <span v-show="show"> 
+                  <span >6%</span>
+                  <img class="tipsImg" src="./images/paopao/2.png" alt="" >
+                </span>
+
+              </div>
+              <div class="p3 move2">   
+                <img class="popImg" src="./images/paopao/an.png" alt="" v-show="!show">
+                <img class="popImg" src="./images/paopao/liang.png" alt="" v-show="show">
+
+                <span v-show="show"> 
+                  <span >28%</span>
+                  <img class="tipsImg" src="./images/paopao/3.png" alt="" >
+                </span>
+
+              </div>
+              <div class="p4 move1"> 
+                <img class="popImg" src="./images/paopao/an.png" alt="" v-show="show">
+                <img class="popImg" src="./images/paopao/liang.png" alt="" v-show="!show">
+
+                
+                <span v-show="!show"> 
+                  <span >7%</span>
+                  <img class="tipsImg" src="./images/paopao/4.png" alt="" >
+                </span>
+              </div>
+              <div class="p5 move1"> 
+                <img class="popImg" src="./images/paopao/an.png" alt="" v-show="show">
+                <img class="popImg" src="./images/paopao/liang.png" alt="" v-show="!show">
+
+                <span v-show="!show"> 
+                  <span >18%</span>
+                  <img class="tipsImg" src="./images/paopao/5.png" alt="" >
+                </span>
+              </div>
+              <div class="p6 move2">   
+                <img class="popImg" src="./images/paopao/an.png" alt="" v-show="!show">
+                <img class="popImg" src="./images/paopao/liang.png" alt="" v-show="show">
+
+                <span v-show="show"> 
+                  <span >12%</span>
+                  <img class="tipsImg" src="./images/paopao/6.png" alt="" >
+                </span>
+
+              </div>
+              <div class="p7 move1">  
+                <img class="popImg" src="./images/paopao/an.png" alt="" v-show="!show">
+                <img class="popImg" src="./images/paopao/liang.png" alt="" v-show="show">
+
+                <span v-show="show"> 
+                  <span >14%</span>
+                  <img class="tipsImg" src="./images/paopao/7.png" alt="" >
+                </span>
+
+              </div>
+              <div class="p8 move2"> 
+                <img class="popImg" src="./images/paopao/an.png" alt="" v-show="show">
+                <img class="popImg" src="./images/paopao/liang.png" alt="" v-show="!show">
+
+                
+                <span v-show="!show"> 
+                  <span >11%</span>
+                  <img class="tipsImg" src="./images/paopao/8.png" alt="" >
+                </span>
+              </div>
+          </div>
+
+        </div>
+        <div class="leftImgList left3ImgList">
+          <img src="./images/leftImg3.png" alt="">
+        </div>
+
+      </div>
+   
+      <div class="flexKong"></div>
+      <div class='centerBox'>
+        <div class="cneterBoxTop">
+          <!-- <img src="./images/centerImg1.png" alt=""> -->
+          <div v-for='(site,index) in imgList6' class="topBox" :key='index' :class='[index<4?"divList1":"divList2",(index==0 || index==4)?"paddingLeft":"",(index==3 || index==7)?"paddingRight":""]' >
+            <img :src=" site" alt="">
+          </div>
+      
+         
+        </div>
+        <div class="centBoxBottm">
+          <div class="centBoxBottmBox">
+            <el-carousel height="435px" indicator-position='none'  :autoplay='false' :interval="4000" >
+              <el-carousel-item v-for="item in imgList1" :key="item">
+                <img :src="item" alt="">
+              </el-carousel-item>
+            </el-carousel>
+          </div>
+          <div class="centBoxBottmkong"></div>
+          <div class="centBoxBottmBox">
+            <el-carousel height="435px"  indicator-position='none'  :autoplay='false' :interval="4000">
+              <el-carousel-item v-for="item in imgList2" :key="item">
+                <img :src="item" alt="">
+              </el-carousel-item>
+            </el-carousel>
+          </div>
+        </div>
+        <div class="centBoxBottm">
+          <div class="centBoxBottmBox">
+            <el-carousel height="435px"  indicator-position='none'  :autoplay='false' :interval="4000">
+              <el-carousel-item v-for="item in imgList3" :key="item">
+                <img :src="item" alt="">
+              </el-carousel-item>
+            </el-carousel>
+          </div>
+          <div class="centBoxBottmkong"></div>
+          <div class="centBoxBottmBox">
+            <el-carousel height="435px"  indicator-position='none'  :autoplay='false' :interval="4000">
+              <el-carousel-item v-for="item in imgList4" :key="item">
+                <img :src="item" alt="">
+              </el-carousel-item>
+            </el-carousel>
+          </div>
+        </div>
+      </div>
+      <div class="flexKong"></div>
+      <div class='rightBox'>
+        <div class="rightImgList rightImgList1">
+          <img src="./images/rightImg1.png" alt="">
+        </div>
+        <div class="rightImgList rightImgList1">
+          <img src="./images/rightImg2.png" alt="">
+        </div>
+        <div class="rightImgBottom">
+          <img src="./images/rightImg3.png" alt="">
+        </div> 
+      </div>
+      <div class="flexKong"></div>
+    </div>
+  </div>
+
+
+</div>
+
+<script>
+new Vue({
+  el: '#app',
+  data: {
+    show:false,
+    imgList1: ['./images/first/1.png','./images/second/1.png'],
+    imgList2: ['./images/first/2.png','./images/second/2.png'],
+    imgList3: ['./images/first/3.png','./images/second/3.png'],
+    imgList4: ['./images/first/4.png','./images/second/4.png'],
+    imgList5: ['./images/leftImg2.png','./images/leftImg2-1.png'],
+    imgList6: [
+                './images/peopleNum/a1.gif',
+                './images/peopleNum/a2.gif',
+                './images/peopleNum/a3.gif',
+                './images/peopleNum/a4.gif',
+                './images/peopleNum/a5.gif',
+                './images/peopleNum/a6.gif',
+                './images/peopleNum/a7.gif',
+                './images/peopleNum/a8.gif',
+             
+              ],
+    
+  },
+  mounted(){
+
+    setInterval(()=>{
+      this.show=!this.show
+    },3000)
+
+  }
+})
+</script>
+</body>
+</html>
