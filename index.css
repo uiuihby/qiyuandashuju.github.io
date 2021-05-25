@@ -1,0 +1,281 @@
+.containerBox {
+  background-image: url('images/bgBIc.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 3840px;
+}
+.containerBox .topBox {
+  height: 177px;
+  width: 100%;
+  overflow: hidden;
+}
+.containerBox .leftBox {
+  width: 1024px;
+}
+.containerBox .leftBox .left1ImgList {
+  height: 552px;
+}
+.containerBox .leftBox .left2ImgList {
+  height: 549px;
+}
+.containerBox .leftBox .left3ImgList {
+  height: 550px;
+}
+.containerBox .leftBox .leftImgList {
+  width: 100%;
+  margin-bottom: 118px;
+}
+.containerBox .leftBox .leftImgList .paopao {
+  height: 100%;
+  width: 100% ;
+  background-image: url('images/leftImg2.png');
+  position: relative;
+}
+.containerBox .leftBox .leftImgList .paopao > div {
+  position: absolute;
+}
+.containerBox .leftBox .leftImgList .paopao > div span {
+  position: absolute;
+  text-align: center;
+  color: #fff;
+  left: 0;
+}
+.containerBox .leftBox .leftImgList .paopao > div p {
+  position: absolute;
+}
+.containerBox .leftBox .leftImgList .paopao .move1 {
+  animation: mymove 3s infinite alternate;
+}
+.containerBox .leftBox .leftImgList .paopao .move2 {
+  animation: mymove2 3s infinite alternate;
+}
+@keyframes mymove {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(0, 10px);
+  }
+}
+@keyframes mymove2 {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(0, -10px);
+  }
+}
+.containerBox .leftBox .leftImgList .paopao .p1 {
+  top: 166px;
+  left: 73px;
+}
+.containerBox .leftBox .leftImgList .paopao .p1 .popImg {
+  width: 105px;
+  height: 105px;
+}
+.containerBox .leftBox .leftImgList .paopao .p1 span {
+  line-height: 105px;
+  font-size: 40px;
+  width: 105px;
+}
+.containerBox .leftBox .leftImgList .paopao .p1 .tipsImg {
+  position: absolute;
+  left: -34px;
+  top: 103px;
+}
+.containerBox .leftBox .leftImgList .paopao .p1 p {
+  font-size: 28px;
+  font-weight: bold;
+  color: #010448;
+  line-height: 28px;
+  padding: 11px 23px;
+  width: 121px;
+  background-color: #fff;
+  height: 28px;
+  border-radius: 14px;
+}
+.containerBox .leftBox .leftImgList .paopao .p2 {
+  bottom: 69px;
+  left: 154px;
+}
+.containerBox .leftBox .leftImgList .paopao .p2 .tipsImg {
+  position: absolute;
+  left: -28px;
+  top: -59px;
+}
+.containerBox .leftBox .leftImgList .paopao .p2 span {
+  line-height: 112px;
+  font-size: 40px;
+  width: 105px;
+}
+.containerBox .leftBox .leftImgList .paopao .p2 .popImg {
+  width: 105px;
+  height: 105px;
+}
+.containerBox .leftBox .leftImgList .paopao .p3 {
+  bottom: 148px;
+  left: 305px;
+}
+.containerBox .leftBox .leftImgList .paopao .p3 .tipsImg {
+  position: absolute;
+  left: -6px;
+  top: 164px;
+}
+.containerBox .leftBox .leftImgList .paopao .p3 span {
+  line-height: 164px;
+  font-size: 60px;
+  width: 164px;
+}
+.containerBox .leftBox .leftImgList .paopao .p3 .popImg {
+  width: 164px;
+  height: 164px;
+}
+.containerBox .leftBox .leftImgList .paopao .p4 {
+  bottom: 23px;
+  left: 478px;
+}
+.containerBox .leftBox .leftImgList .paopao .p4 .popImg {
+  width: 111px;
+  height: 111px;
+}
+.containerBox .leftBox .leftImgList .paopao .p4 .tipsImg {
+  position: absolute;
+  left: -28px;
+  top: -59px;
+}
+.containerBox .leftBox .leftImgList .paopao .p4 span {
+  line-height: 111px;
+  font-size: 40px;
+  width: 111px;
+}
+.containerBox .leftBox .leftImgList .paopao .p5 {
+  bottom: 178px;
+  left: 523px;
+}
+.containerBox .leftBox .leftImgList .paopao .p5 .popImg {
+  width: 145px;
+  height: 145px;
+}
+.containerBox .leftBox .leftImgList .paopao .p5 .tipsImg {
+  position: absolute;
+  left: -10px;
+  top: -63px;
+}
+.containerBox .leftBox .leftImgList .paopao .p5 span {
+  line-height: 145px;
+  font-size: 44px;
+  width: 145px;
+}
+.containerBox .leftBox .leftImgList .paopao .p6 {
+  bottom: 45px;
+  left: 641px;
+}
+.containerBox .leftBox .leftImgList .paopao .p6 .tipsImg {
+  position: absolute;
+  left: -22px;
+  top: -59px;
+}
+.containerBox .leftBox .leftImgList .paopao .p6 span {
+  line-height: 122px;
+  font-size: 44px;
+  width: 122px;
+}
+.containerBox .leftBox .leftImgList .paopao .p6 .popImg {
+  width: 122px;
+  height: 122px;
+}
+.containerBox .leftBox .leftImgList .paopao .p7 {
+  bottom: 152px;
+  left: 802px;
+}
+.containerBox .leftBox .leftImgList .paopao .p7 .tipsImg {
+  position: absolute;
+  left: -6px;
+  top: -59px;
+}
+.containerBox .leftBox .leftImgList .paopao .p7 span {
+  line-height: 140px;
+  font-size: 50px;
+  width: 140px;
+}
+.containerBox .leftBox .leftImgList .paopao .p7 .popImg {
+  width: 140px;
+  height: 140px;
+}
+.containerBox .leftBox .leftImgList .paopao .p8 {
+  bottom: 22px;
+  left: 857px;
+}
+.containerBox .leftBox .leftImgList .paopao .p8 span {
+  line-height: 115px;
+  font-size: 44px;
+  width: 115px;
+}
+.containerBox .leftBox .leftImgList .paopao .p8 .tipsImg {
+  position: absolute;
+  left: -28px;
+  top: -63px;
+}
+.containerBox .leftBox .leftImgList .paopao .p8 .popImg {
+  width: 115px;
+  height: 115px;
+}
+.containerBox .centerBox {
+  width: 1447px;
+}
+.containerBox .centerBox .cneterBoxTop {
+  background-image: url('images/centerImg1.png');
+  height: 872px;
+  margin-bottom: 85px;
+}
+.containerBox .centerBox .cneterBoxTop .topBox {
+  width: 25%;
+  height: 244px;
+  text-align: center;
+  display: inline-block;
+}
+.containerBox .centerBox .cneterBoxTop .divList1 {
+  margin: 96px 0 185px 0;
+}
+.containerBox .centerBox .cneterBoxTop .divList2 {
+  margin-top: -27px;
+}
+.containerBox .centerBox .cneterBoxTop .paddingLeft {
+  width: calc(25% - 28px);
+  padding-left: 28px;
+}
+.containerBox .centerBox .cneterBoxTop .paddingRight {
+  width: auto;
+}
+.containerBox .centerBox .centBoxBottm {
+  display: flex;
+  margin-bottom: 85px;
+}
+.containerBox .centerBox .centBoxBottm .centBoxBottmBox {
+  width: 682.5px;
+  height: 432px;
+}
+.containerBox .centerBox .centBoxBottm .centBoxBottmkong {
+  width: 82px;
+}
+.containerBox .rightBox {
+  width: 1024px;
+}
+.containerBox .rightBox .rightImgList1 {
+  height: 552px;
+}
+.containerBox .rightBox .rightImgList2 {
+  height: 549px;
+}
+.containerBox .rightBox .rightImgList {
+  width: 100%;
+  margin-bottom: 120px;
+}
+.containerBox .rightBox .rightImgBottom {
+  width: 100%;
+  height: 912px;
+  margin-bottom: 83px;
+}
+.containerBox .flexKong {
+  width: 90px;
+}
